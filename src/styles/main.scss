@@ -1,0 +1,42 @@
+:root {
+    --primary: #386641;
+	--accent: #6A994E;
+	--delete: #A7C957;
+	--primary-text: #BC4749;
+	--base: #F2E8CF;
+    background-color: var(--base);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 55rem;			  /* Keeps the page from overflowing on wide monitors */
+    margin: 0.5em auto;		      /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
+    border: 1px solid black;	/* Surround the content with a solid black border */
+    border-radius: 5px;			  /* Round the corners of the body section */
+    padding: 0.75rem;			  /* Padding goes between the borders and the internal content */
+    background-color: var(--base);	/* Contrast the body background from the page background */
+}
+
+h1 {
+	/* font-family: "Arial Black", Arial, sans-serif; /**/
+	font-weight: bolder;
+	font: "Lucida Console";
+	color: var(--primary-text);
+}
+
+nav {
+    color: var(white);				/* Nav bar is white on very dark gray */
+    background-color: var(--accent);
+	border: 2px solid var(--primary);
+    padding: 0.75rem;			  /* Give the nav bar some internal padding */
+}
+
+nav a {
+    color: var(--base);		/* Links in the nav bar are light blue instead of white */
+    text-decoration: none;		  /* Don't underline links in the nav bar */
+}
+
+
+.current {
+  color: white;
+}
