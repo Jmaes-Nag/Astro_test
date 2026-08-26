@@ -1,0 +1,28 @@
+---
+const pageTitle = "AI Projects";
+import '../styles/main.scss';
+import Navigation from '../components/Navigation.astro';
+---
+
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+    <body>
+        <Navigation />
+        <h1>{pageTitle}</h1>
+        <p>
+            These are small projects I've had AI build for me.
+        </p>
+        <ul>
+            <li><a href="https://quter.jmaesng.com">QuteR</a>
+                - A client-side tool for generating and customizing QR codes.</li>
+            <li><a href="https://utfires.jmaesng.com">Utah wildfire tracker</a>- Tool that shows data about wildfires and smoke in Utah; uses publicly available sources</li>
+        </ul>
+    </body>
+</html>
